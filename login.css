@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --darker: #190482;
+    --dark: #322653;
+    --semi-dark: #673dff;
+    --semi-light: #7752FE;
+    --light: #8E8FFA;
+    --lighter:#C2D9FF;
+    --white: #ECF2FF;
+    --black: #272829;
+}
+
+body{
+    background:var(--semi-dark);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.form-holder{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-self: center;
+    padding: 3rem;
+    background-color: #322653;
+    border-radius: 25px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--light);
+    padding: 5rem;
+    border-radius: 15px;
+}
+
+.welcome-text h1{
+    color: var(--dark);
+}
+
+.form-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid var(--dark);
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:7px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--dark);
+    color: var(--lighter);
+}
+
+.form-button button:active{
+    background-color: var(--black);
+}
+
+
+.image{
+    background: var(--dark);
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .form-holder{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        background-color: var(--light);
+        padding: 2rem;
+        border-radius: 20px;
+    }
+    
+    .form-details{
+       width: 100%;
+    }
+    
+    .title{
+        padding-bottom: 1rem;
+    }
+    
+}
